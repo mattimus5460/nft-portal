@@ -1,0 +1,1 @@
+{  "image": "http://localhost:3000/images/grobot.png",  "name": "Test NFT Filter for SeedNFT artworks",  "description":"Combine with a SeedNFT artwork",  "filter": {"initialValue": "yellow"}}

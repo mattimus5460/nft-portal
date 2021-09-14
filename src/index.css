@@ -11,3 +11,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+button {
+  padding: 9px 16px;
+  max-height: 40px;
+  /*box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 20%);*/
+  border-color: #254cdd;
+  color: #254cdd;
+  background-color: white;
+  border-radius: 8px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+button:hover {
+  margin-top: -1px;
+}
+
+#walletButton {
+  text-align: right;
+  float:right;
+  line-height: 16px;
+}
+
+#WalletContents {
+  padding: 40px;
+}
+
+.tokenFrame {
+  width: 400px;
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align:top;
+}
+.tokenFrame img{
+  width: 100%;
+}
+
+#walletConnect{
+  position: absolute;
+  right: 10px;
+  top:10px;
+}

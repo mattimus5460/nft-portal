@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import ImageOverlay from "./components/ImageOverlay";
+import WalletContext from "./components/WalletContext";
+import {useEffect, useState} from "react";
+import {addWalletListener, getCurrentWalletConnected} from "./utils/WalletHelpers";
+import WalletConnect from "./components/WalletConnect";
+import WalletContents from "./components/WalletContents";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [walletAddress, setWallet] = useState("");
+    const [status, setStatus] = useState("");
+
+    useEffect(() => {
+        async function connectWallet() {
+            const {address, status} = await getCurrentWalletConnected();
+            setWallet(address);
+            setStatus(status);
+        }
+
+        connectWallet();
+        addWalletListener(setStatus, setWallet);
+    }, []);
+
+    return (
+        <WalletContext.Provider value={{walletAddress: walletAddress, status: status}}>
+            <div className="App">
+                <WalletConnect/>
+                <WalletContents/>
+            </div>
+        </WalletContext.Provider>
+    );
 }
 
 export default App;
