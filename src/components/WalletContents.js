@@ -47,7 +47,10 @@ const WalletConnect = (props) => {
         const getAllTokenUris = async (tokenIds) => {
             let results = await Promise.all(tokenIds.map(async (item) => {
                 let tokenUri = await getTokenURIbyTokenId(item)
-                return {tokenUri, tokenId: item}
+
+                let tokenCategory = await getTokenCategorybyTokenId(item)
+
+                return {tokenUri, tokenCategory, tokenId: item}
             }));
             return results
         }
@@ -86,6 +89,12 @@ const WalletConnect = (props) => {
         let uriResp = await seedNFTContract.tokenURI(tokenId)
         return uriResp;
     }
+
+    const getTokenCategorybyTokenId = async (tokenId) => {
+        let uriResp = await seedNFTContract.getTokenCategoryByIndex(tokenId)
+        return uriResp;
+    }
+
 
     const checkOwnerOfTokenByIndex = async (address, tokenId) => {
         let ownerOfResp = await seedNFTContract.tokenOfOwnerByIndex(address, tokenId)
@@ -142,7 +151,7 @@ const WalletConnect = (props) => {
                 {tokenJsonForWallet && tokenJsonForWallet.length > 0 && (
                     <>
                         {tokenJsonForWallet.filter(t => t.tokenUri).map((t) => (
-                            <div className={'tokenFrame'}><p>{t.name}</p> <img src={t.image} alt={t.description}/><p>{t.tokenId}</p> {t.description}
+                            <div className={'tokenFrame'}><p>{t.name}</p> <img src={t.image} alt={t.description}/><p>{t.tokenId}</p> {t.description} {t.tokenCategory}
 
                             <ImageOverlay image={t.image}/>
 
