@@ -1,0 +1,21 @@
+div.preview-container {
+    width: 100%;
+    display: inline-block;
+}
+
+div.preview-header {
+    text-align: left;
+    padding: 1%;
+    width: 100%;
+
+    border-bottom: 1px solid white;
+}
+
+div.preview-content {
+    width: 20%;
+    height: 10%;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 1%;
+    margin: 1%;
+}

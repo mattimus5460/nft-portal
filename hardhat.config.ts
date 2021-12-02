@@ -81,3 +81,5 @@ task("mint-nft", "Mint an NFT")
     });
 
 export default config;
+
+//npx hardhat mint-nft --token-uri http://localhost:3000/test-nft-filter.json --network localhost --category filter

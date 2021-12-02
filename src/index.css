@@ -18,8 +18,8 @@ button {
   padding: 9px 16px;
   max-height: 40px;
   /*box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 20%);*/
-  border-color: #254cdd;
-  color: #254cdd;
+  border-color: #495c73;
+  color: #1a1a2a;
   background-color: white;
   border-radius: 8px;
   align-items: center;
@@ -34,11 +34,6 @@ button:hover {
   margin-top: -1px;
 }
 
-#walletButton {
-  text-align: right;
-  float:right;
-  line-height: 16px;
-}
 
 #WalletContents {
   padding: 40px;
@@ -55,7 +50,13 @@ button:hover {
 }
 
 #walletConnect{
-  position: absolute;
-  right: 10px;
-  top:10px;
+  margin: 10px auto;
+}
+
+#walletButton {
+  text-align: right;
+  line-height: 16px;
+}
+
+div#walletConnect p.status {
 }

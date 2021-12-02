@@ -5,7 +5,7 @@ import {abi} from "../abi/SeedNFT.json"
 import {get} from "axios";
 import ImageOverlay from "./ImageOverlay";
 
-const WalletConnect = (props) => {
+const Redeem = (props) => {
 
     const {walletAddress} = useContext(WalletContext)
     //const {walletAddress} = props
@@ -164,4 +164,4 @@ const WalletConnect = (props) => {
     )
 }
 
-export default WalletConnect
+export default Redeem

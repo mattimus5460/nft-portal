@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+mj# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -52,7 +52,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/c
 ### Analyzing the Bundle Size
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
+/j'
 ### Making a Progressive Web App
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
@@ -69,4 +69,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 1
-rer5rdtrfyyg8tgyhvfjighvbfjmd;lgbbhkbftjngrtgkytyjjyiuyiotuioy6 uuuuuuuuyity6iuiyu9oiopoittou
+rer5rdtrfyyghp;kj;mk';,';,/;,';,';/,'','
+' 
+',m,,,kmmkjmnmnmmmmmmmm ,[;]ikltgyhv f                                                         111jighvbfjmd;lgbbhkbftjngrtgkytyjjyiuyiotuioy6 uuuuuuuuyity6iuiyu9oiopoittou

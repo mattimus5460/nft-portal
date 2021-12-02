@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e72f6597-cc68-4342-b77e-6beae228da79" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/nft.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/nft.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardhat.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hardhat.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WalletContents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WalletContents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -50,27 +58,27 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="ts.external.directory.path" value="C:\Users\Matt\Documents\dev\nft-portal\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Matt\Documents\dev\nft-portal\src\images" />
-      <recent name="C:\Users\Matt\Documents\dev\nft-portal\public" />
-      <recent name="C:\Users\Matt\Documents\dev\nft-portal\src\abi" />
       <recent name="C:\Users\Matt\Documents\dev\nft-portal\src\components" />
-      <recent name="C:\Users\Matt\Documents\dev\nft-portal\scripts" />
+      <recent name="C:\Users\Matt\Documents\dev\nft-portal\src\images" />
+      <recent name="C:\Users\Matt\Documents\dev\nft-portal\public\nft" />
+      <recent name="C:\Users\Matt\Documents\dev\nft-portal\public\nft\1" />
+      <recent name="C:\Users\Matt\Documents\dev\nft-portal\src\abi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Matt\Documents\dev\nft-portal\src\components\previews" />
+      <recent name="C:\Users\Matt\Documents\dev\nft-portal\src\images" />
       <recent name="C:\Users\Matt\Documents\dev\nft-portal\contracts" />
       <recent name="C:\Users\Matt\Documents\dev\nft-portal\public\images" />
       <recent name="C:\Users\Matt\Documents\dev\nft-portal\public" />
-      <recent name="C:\Users\Matt\Documents\dev\nft-portal\src" />
-      <recent name="C:\Users\Matt\Documents\dev\nft-portal" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.SeedNFT">
+  <component name="RunManager" selected="npm.npm start">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -207,6 +215,19 @@
       <workItem from="1630774413706" duration="30635000" />
       <workItem from="1631377224248" duration="2387000" />
       <workItem from="1631388745989" duration="34504000" />
+      <workItem from="1631629015015" duration="11423000" />
+      <workItem from="1631826916937" duration="8116000" />
+      <workItem from="1632144956460" duration="3279000" />
+      <workItem from="1632172690862" duration="9462000" />
+      <workItem from="1633482680894" duration="18766000" />
+      <workItem from="1634090080836" duration="5756000" />
+      <workItem from="1634341911238" duration="2720000" />
+      <workItem from="1634571651612" duration="13877000" />
+      <workItem from="1635515651482" duration="1924000" />
+      <workItem from="1635621313904" duration="9478000" />
+      <workItem from="1636650688805" duration="7656000" />
+      <workItem from="1636933612553" duration="1822000" />
+      <workItem from="1638323209392" duration="1183000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit with Wallets connecting from metamask, loads SeedNFTs by address, fetches json nft data, and fetches images to display">
       <created>1631627272888</created>
@@ -215,7 +236,28 @@
       <option name="project" value="LOCAL" />
       <updated>1631627272888</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="line endings fix">
+      <created>1631629095697</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631629095697</updated>
+    </task>
+    <task id="LOCAL-00003" summary="unused file">
+      <created>1631629710765</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631629710765</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ERC721Category implementation and WalletContents.js updates to pull category">
+      <created>1631820020359</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1631820020359</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +265,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit with Wallets connecting from metamask, loads SeedNFTs by address, fetches json nft data, and fetches images to display" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit with Wallets connecting from metamask, loads SeedNFTs by address, fetches json nft data, and fetches images to display" />
+    <MESSAGE value="line endings fix" />
+    <MESSAGE value="unused file" />
+    <MESSAGE value="ERC721Category implementation and WalletContents.js updates to pull category" />
+    <option name="LAST_COMMIT_MESSAGE" value="ERC721Category implementation and WalletContents.js updates to pull category" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -231,19 +276,16 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/node_modules/@ethersproject/providers/src.ts/index.ts</url>
           <line>67</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/node_modules/@ethersproject/providers/src.ts/index.ts</url>
           <line>66</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/node_modules/@ethersproject/providers/src.ts/index.ts</url>
           <line>53</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
