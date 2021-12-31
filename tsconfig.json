@@ -27,6 +27,5 @@
     "./lib"
   ],
   "files": [
-    "./hardhat.config.ts"
   ]
 }
