@@ -5,7 +5,7 @@ import {addWalletListener, getCurrentWalletConnected} from "./utils/WalletHelper
 import WalletConnect from "./components/WalletConnect";
 import WalletContents from "./components/WalletContents";
 import Previews from "./components/previews/Previews";
-import {Route, BrowserRouter as Router, Switch, Link} from "react-router-dom";
+import {Route, Routes, Outlet, BrowserRouter as Router, Link, BrowserRouter} from "react-router-dom";
 import grobot from "./images/grobot_tp.png";
 import Redeem from "./components/Redeem";
 
@@ -25,28 +25,39 @@ function App() {
         addWalletListener(setWalletAddress, setStatus);
     }, []);
 
+
+    return (
+
+        <WalletContext.Provider value={{walletAddress: walletAddress, status: status}}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Layout/>}>
+                        <Route index element={<Previews/>}/>
+                        <Route path="explore" element={<WalletContents/>}/>
+                        <Route path="redeem" element={<Redeem/>}/>
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </WalletContext.Provider>
+    );
+}
+
+function Layout() {
     return (
         <div className="App">
-            <WalletContext.Provider value={{walletAddress: walletAddress, status: status}}>
-                <Router>
-                    <div id={'App-left'}>
-                        <Route path="/" component={WalletConnect}/>
-                        <ul id={'nav'}>
-                            <li><Link to={'/home'}>Home</Link></li>
-                            <li><Link to={'/explore'}>Explore</Link></li>
-                            <li><Link to={'/redeem'}>Redeem</Link></li>
-                        </ul>
-                        <img className={'grobot'} src={grobot}/>
-                    </div>
+            <div id={'App-left'}>
+                <WalletConnect/>
+                <ul id={'nav'}>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='explore'>Explore</Link></li>
+                    <li><Link to='redeem'>Redeem</Link></li>
+                </ul>
+                <img className={'grobot'} src={grobot}/>
+            </div>
 
-
-                    <div id={'App-right'}>
-                        <Route path="/home" component={Previews}/>
-                        <Route path="/explore" component={WalletContents}/>
-                        <Route path="/redeem" component={Redeem}/>
-                    </div>
-                </Router>
-            </WalletContext.Provider>
+            <div id={'App-right'}>
+                <Outlet/>
+            </div>
         </div>
     );
 }
