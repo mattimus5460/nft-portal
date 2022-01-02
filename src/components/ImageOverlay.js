@@ -28,7 +28,7 @@ const ImageOverlay = (props) => {
                     setColor1(color.hex)
                 }}/>
 
-            <SwatchesPicker
+            <HuePicker
                 onChangeComplete={(color) => { 
                     setColor2(color.hex)
                 }}/>

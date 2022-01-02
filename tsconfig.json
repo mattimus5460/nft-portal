@@ -24,8 +24,7 @@
   "include": [
     "./scripts",
     "./test",
-    "./lib"
-  ],
-  "files": [
+    "./lib",
+    "./src"
   ]
 }
