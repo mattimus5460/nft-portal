@@ -7,6 +7,7 @@ import {
     getAllTokensForAddress,
     getAllTokenUris
 } from "../utils/WalletTokenHelpers";
+import atlantis from '../images/VIEW FROM MOUNT ATLANTIS.jpg';
 
 const WalletConnect = (props) => {
 
@@ -73,16 +74,17 @@ const WalletConnect = (props) => {
                 {/*    </>*/}
                 {/*)}*/}
 
+                <ImageOverlay image={atlantis} color1={'purple'} color2={'green'}/>
+
                 {tokenJsonForWallet && tokenJsonForWallet.length > 0 && (
                     <>
                         {tokenJsonForWallet.filter(t => t.tokenUri).map((t) => (
                             <div className={'tokenFrame'}>
                                 <p>{t.name}</p>
-                                {/*<img src={t.image} alt={t.description}/>*/}
+                                <img src={t.image} alt={t.description}/>
                                 <p>{t.tokenId}</p>
                                 <p>{t.description}</p>
 
-                                <ImageOverlay image={t.image}/>
                             </div>
                         ))}
                     </>
