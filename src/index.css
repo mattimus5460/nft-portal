@@ -49,14 +49,5 @@ button:hover {
   width: 100%;
 }
 
-#walletConnect{
-  margin: 10px auto;
-}
-
-#walletButton {
-  text-align: right;
-  line-height: 16px;
-}
-
 div#walletConnect p.status {
 }

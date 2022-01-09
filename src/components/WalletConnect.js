@@ -1,5 +1,5 @@
 import WalletContext from "./WalletContext";
-import {connectWallet} from "../utils/WalletHelpers";
+import {connectWallet} from "../utils/WalletConnectHelpers";
 import {useContext} from "react";
 
 const WalletConnect = (props) => {

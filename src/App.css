@@ -25,6 +25,8 @@ body {
 
 ul#nav li {
   list-style: none;
+  display: inline-block;
+  padding: 1%;
 }
 
 ul#nav li a{
@@ -57,9 +59,17 @@ ul#nav li a{
   float: top;
   width: 100%;
   height: 100%;
-  //background: linear-gradient(#f05fa6, #ed1654);
   position: absolute;
   top: 0;
   right: 0;
-  opacity: .5;
+}
+
+
+#walletConnect{
+  margin: 10px auto;
+}
+
+#walletButton {
+  text-align: right;
+  line-height: 16px;
 }
