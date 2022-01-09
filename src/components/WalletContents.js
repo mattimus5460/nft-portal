@@ -7,12 +7,12 @@ import {
     getAllTokensForAddress,
     getAllTokenUris
 } from "../utils/WalletTokenHelpers";
-import atlantis from '../images/VIEW FROM MOUNT ATLANTIS.jpg';
+import atlantis from '../images/atlantis-crop.jpg';
+import frontier from '../images/The new frontier 2012.jpg';
 
 const WalletConnect = (props) => {
 
     const {walletAddress} = useContext(WalletContext)
-    //const {walletAddress} = props
     const [balanceOfOwner, setBalanceOfOwner] = useState()
     const [tokenJsonForWallet, setTokenJsonForWallet] = useState([])
 
@@ -74,7 +74,7 @@ const WalletConnect = (props) => {
                 {/*    </>*/}
                 {/*)}*/}
 
-                <ImageOverlay image={atlantis} color1={'purple'} color2={'green'}/>
+                <ImageOverlay image={frontier} color1={'purple'} color2={'green'}/>
 
                 {tokenJsonForWallet && tokenJsonForWallet.length > 0 && (
                     <>

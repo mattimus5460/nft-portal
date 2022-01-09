@@ -42,13 +42,15 @@ function App() {
 function Layout() {
     return (
         <div className="App">
-            <div id={'App-left'}>
-                <WalletConnect/>
+            <div id={'App-top'}>
                 <ul id={'nav'}>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='explore'>Explore</Link></li>
                     <li><Link to='redeem'>Redeem</Link></li>
+                    <li><WalletConnect/></li>
                 </ul>
+            </div>
+            <div id={'App-left'}>
                 <img className={'grobot'} src={grobot}/>
             </div>
 
