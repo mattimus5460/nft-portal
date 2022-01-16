@@ -54,26 +54,6 @@ const WalletConnect = (props) => {
                 )}
             </div>
             <div id="summary">
-                {/*{tokenIdsForWallet.length > 0 && (*/}
-                {/*    <p>*/}
-                {/*        Token Ids:*/}
-                {/*        {tokenIdsForWallet.map((t) => (*/}
-                {/*            t + ','*/}
-                {/*        ))}*/}
-                {/*    </p>*/}
-                {/*)}*/}
-
-                {/*{tokenUrisForWallet && tokenUrisForWallet.length > 0 && (*/}
-                {/*    <>*/}
-                {/*        <p>Token URIs:</p>*/}
-                {/*        <ul>*/}
-                {/*            {tokenUrisForWallet.map((t) => (*/}
-                {/*                <li key={t.tokenId}>{t.tokenUri}</li>*/}
-                {/*            ))}*/}
-                {/*        </ul>*/}
-                {/*    </>*/}
-                {/*)}*/}
-
                 <ImageOverlay image={frontier} color1={'purple'} color2={'green'}/>
 
                 {tokenJsonForWallet && tokenJsonForWallet.length > 0 && (

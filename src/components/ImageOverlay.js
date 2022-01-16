@@ -14,17 +14,6 @@ const ImageOverlay = (props) => {
     // linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
     // linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 
-    const onBlendChange = (event, value) => {
-        setBlendPercent(value)
-    }
-
-    const onRotationChange = (event, value) => {
-        setRotation(value)
-    }
-
-    const onOpacityChange = (event, value) => {
-        setOpacity(value)
-    }
     //
     // useEffect(() => {
     //     const interval = setInterval(() => {
@@ -45,11 +34,11 @@ const ImageOverlay = (props) => {
                 <img src={props.image} className="base-image"/>
             </div>
 
-            <Slider aria-label="Volume" value={blendPercent} onChange={onBlendChange}/>
+            <Slider aria-label="Volume" value={blendPercent} onChange={(e, v) => setBlendPercent(v)}/>
 
-            <Slider aria-label="Volume" value={rotation} max={360} onChange={onRotationChange}/>
+            <Slider aria-label="Volume" value={rotation} max={360} onChange={(e, v) => setRotation(v)}/>
 
-            <Slider aria-label="Volume" value={opacity} max={1} step={.01} onChange={onOpacityChange}/>
+            <Slider aria-label="Volume" value={opacity} max={1} step={.01} onChange={(e, v) => setOpacity(v)}/>
 
             <SwatchesPicker
                 color={color1}

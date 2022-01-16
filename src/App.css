@@ -14,8 +14,12 @@ body {
   float: left;
 }
 
-#App-left img.grobot {
+#App-top img.grobot {
   width: 100%;
+}
+
+#App-top li.grobot {
+  width: 25%;
 }
 
 #App-right {

@@ -1,12 +1,10 @@
-import React, {useState} from "react";
-import painting from "../../images/atlantis-crop.jpg";
-import {HuePicker, SwatchesPicker} from "react-color";
+import React from "react";
+import atlantis from "../../images/atlantis-crop.jpg";
 import "./previews.css"
 import grobot_green from "../../images/grobot-green-small.png";
 import grobot_pink from "../../images/grobot-pink-small.png";
 import grobot_yellow from "../../images/grobot-yellow-small.png";
 import grobot_ltblue from "../../images/grobot-ltblue-small.png";
-import atlantis from "../../images/atlantis-crop.jpg";
 import entheo1 from "../../images/entheo-small.png";
 import entheo2 from "../../images/entheo-small-2.png";
 import entheo3 from "../../images/entheo-small-3.png";
@@ -62,15 +60,12 @@ const Previews = (props) => {
                 </div>
 
                 <div className={'preview-content'}>
-
                     <img src={atlantis} className="base-image"/>
                 </div>
                 <div className={'preview-content'}>
-
                     <img src={atlantis} className="base-image"/>
                 </div>
             </div>
-
         </div>
     );
 }
